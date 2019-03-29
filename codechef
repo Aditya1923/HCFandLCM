@@ -1,0 +1,18 @@
+import java.util.*;
+public class HCFandLCM{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int i,a,b,p=0,h=0,l=0;
+System.out.println("Enter two numbers");
+a=sc.nextInt();
+b=sc.nextInt();
+p=a*b;
+for(i=1;i<=p;i++){
+if((a%i==0)&&(b%i==0)){
+h=i;
+l=p/h;
+}
+System.out.println("HCF= "+h);
+System.out.println("LCM= "+l);
+}
+}
